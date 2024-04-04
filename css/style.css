@@ -1,0 +1,464 @@
+.skip{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus{
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+body {
+    background-color: lightgrey;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25;
+    margin: 20px;
+}
+  body h1{
+    text-align: center;
+    border: 2px;
+    border-width: 10px;
+    border-color: black;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  body h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  body p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  body h4{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  body h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  ul{
+    list-style-type: disc;
+  }
+
+  li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+  
+  a.active {
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    border: 3px solid black;
+  }
+  
+  nav {
+    font-size: large;
+    margin: 20px;
+  }
+
+  .nav_list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: left;
+    align-items: left;
+    gap: 10px;
+  }
+
+  #intro {
+    border: 2px solid black;
+    margin-bottom: 20px;
+  }
+
+  #intro p {
+    border: 3px solid lightgray; 
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #pets h2{
+      background-color: black;
+      color: white;
+      text-align: center;
+  }
+
+  #pets img{
+    width: 150;
+    border: 3px solid black;
+  }
+
+  .pet_pics img{
+    width: 100px;
+    margin: 10px;
+    border: 3px solid black;
+  }
+
+  .pet_pics2 img{
+    width: 150px;
+    margin: 10px;
+    border: 3px solid black;
+  }
+
+  .pet_pics{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 3px solid black; 
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .pet_pics2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid black; 
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #food h2{
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  #food img{
+    border: 3px solid black;
+  }
+
+  #travel h2{
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  #travel img{
+    border: 3px solid black;
+  }
+  
+  .travel_pics{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid black; 
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25;
+    margin: 20px;
+  }
+
+  #intro p {
+    border: 3px solid lightgoldenrodyellow;
+  }
+
+  #pets img{
+    width: 180;
+    border: 4px solid black;
+  }
+
+  .title_pic{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: left;
+    justify-items: left;
+    align-items: left;
+    position: relative;
+    animation: mymove 3s forwards;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+
+  .pet_pics img{
+    width: 170px;
+    margin: 10px;
+    border: 4px solid black;
+  }
+
+  .pet_pics2 img{
+    width: 250px;
+    margin: 10px;
+    border: 4px solid black;
+  }
+
+  .describe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 3px solid black;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  #travel img{
+    width: 200px;
+  }
+  .travel_pics{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid black; 
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border: 3px solid black; 
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  button{
+    display: none;
+  }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .title_pic {
+      animation: none;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    body {
+      background-color: lightsteelblue;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    #intro p {
+      border: 3px solid lightsteelblue;
+      width: 300px;
+    }
+
+    #intro{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+
+    #intro {
+      border: 2px solid #00203D;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      align-items: center;
+      /* width: 400px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center; */
+    }
+  
+    #intro p {
+      border: 3px solid lightsteelblue; 
+      background-color:  #00203D;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .nav_list{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+    }
+    
+    #pets h2{
+      background-color: #00203D;
+  }
+
+  .fakepet{
+    display:none;
+  }
+
+  #pets h2{
+    border-radius: 15px;
+  }
+
+  .title_section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: none;
+  }
+
+  button{
+    display: block;
+    margin: auto;
+    width: 200px;
+    padding: 15px;
+    border: solid;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    background-color: #00203D;
+    color: white;
+  }
+
+  #pets img{
+    border: 4px solid #00203D;
+    border-radius: 15px;
+  }
+
+  .pet_pics {
+      border: 0px;
+  }
+
+  .pet_pics2 {
+    border: 0px;
+  }
+
+  #food img{
+    border: 4px solid #00203D;
+    border-radius: 15px;
+  }
+
+  .title_pic_recipe{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: none;
+  }
+
+  .travel_pics{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid black; 
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #food h2{
+    background-color: #00203D;
+    color: white;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .describe{
+    border-color: #00203D;
+    border-radius: 15px;
+  }
+
+  #travel h2{
+    background-color: #00203D;
+    color: white;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .travel_pics{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 0px;
+  }
+
+  #travel img{
+    border: 4px solid #00203D;
+    border-radius: 15px;
+  }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid #00203D;
+    border-radius: 15px;
+  }
+
+  .gallery img{
+    margin: 5px;
+  }
+
+  .gallery:nth-child(2n) {
+    grid-column: 2;
+  }
+
+  .quote{
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+
+  }
